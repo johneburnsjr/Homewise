@@ -7,13 +7,18 @@
                 <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Smarter home repairs.<br>No more surprises</h1>
 
                 <!-- Address Input -->
-                <form class="mt-6 flex justify-center">
-                    <input type="text" placeholder="Enter your zip code"
-                           class="w-2/3 md:w-1/2 px-4 py-3 rounded-l-lg text-gray-800 focus:outline-none">
-                    <button type="submit"
-                            class="bg-indigo-500 hover:bg-indigo-700 px-6 py-3 rounded-r-lg font-semibold text-white">
-                        Check My Area
-                    </button>
+                <form method="POST" action="{{ route('maintenance.lookup') }}" class="mt-10 flex flex-col items-center space-y-4">
+                    @csrf
+                    <div class="flex w-full justify-center">
+                        <input type="text" name="zip" placeholder="Enter your ZIP code"
+                               class="w-2/3 md:w-1/2 px-4 py-3 rounded-l-lg text-gray-800 focus:ring-2 focus:ring-indigo-400 focus:outline-none"
+                               required pattern="[0-9]{5}">
+                        <button type="submit"
+                                class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-r-lg font-semibold text-white transition">
+                            Get My Local Maintenance Plan
+                        </button>
+                    </div>
+                    <p class="text-white-500 text-md italic">Find seasonal maintenance tips and cost-saving tasks for your area.</p>
                 </form>
             </div>
         </div>
