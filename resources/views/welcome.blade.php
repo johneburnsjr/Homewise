@@ -8,11 +8,11 @@
 
                 <!-- Address Input -->
                 <form class="mt-6 flex justify-center">
-                    <input type="text" placeholder="Enter your address"
+                    <input type="text" placeholder="Enter your zip code"
                            class="w-2/3 md:w-1/2 px-4 py-3 rounded-l-lg text-gray-800 focus:outline-none">
                     <button type="submit"
                             class="bg-indigo-500 hover:bg-indigo-700 px-6 py-3 rounded-r-lg font-semibold text-white">
-                        Check My Home
+                        Check My Area
                     </button>
                 </form>
             </div>
@@ -45,7 +45,7 @@
                 <div>
                     <h2 class="text-2xl font-bold mb-6">How It Works</h2>
                     <ol class="space-y-6 text-gray-700">
-                        <li><span class="font-bold">1. Enter Your Address</span> — We fetch GIS data (region, climate, risks).</li>
+                        <li><span class="font-bold">1. Enter Your Zip</span> — We fetch data (climate, risks).</li>
                         <li><span class="font-bold">2. Get Your Plan</span> — Repair costs + seasonal maintenance personalized to you.</li>
                         <li><span class="font-bold">3. Stay Ahead</span> — Monthly checklist + upgrade ideas.</li>
                     </ol>
@@ -53,9 +53,8 @@
 
                 <!-- Example Card -->
                 <div class="bg-gray-50 border rounded-lg p-6 shadow">
-                    <h3 class="font-semibold text-lg">1978 Norfolk, VA</h3>
-                    <p class="text-gray-500 text-sm">Flood Zone X • Plant Zone 8a</p>
-                    <p class="text-gray-600 mt-2">Regional costs +10%</p>
+                    <h3 class="font-semibold text-lg"> Crozet VA - 22932</h3>
+                    <p class="text-gray-500 text-sm">Plant Zone 7b</p>
 
                     <ul class="mt-4 space-y-2 text-gray-700">
                         <li class="flex items-center space-x-2">
